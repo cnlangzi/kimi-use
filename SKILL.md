@@ -5,13 +5,13 @@ Kimi AI 工具集，提供对话、图像理解、翻译等功能。使用 Node.
 ## 环境变量
 
 ```bash
-export KIMI_API_KEY="your-api-key"           # 必填
-export KIMI_API_HOST="https://api.moonshot.cn"  # 可选，默认值
-export KIMI_MODEL="moonshot-v1-8k"              # 可选，默认 moonshot-v1-8k
-export KIMI_VISION_MODEL="kimi-vl-flash"        # 可选，默认 kimi-vl-flash
+export KIMI_API_KEY="sk-kimi-xxxx"                              # 必填（Kimi For Coding 格式）
+export KIMI_API_HOST="https://api.kimi.com/coding"               # Kimi For Coding 端点
+export KIMI_MODEL="kimi-for-coding"                              # 可选，默认 kimi-for-coding
+export KIMI_VISION_MODEL="kimi-vl-flash"                         # 可选，默认 kimi-vl-flash
 ```
 
-获取 API Key: https://platform.moonshot.cn/
+获取 API Key: https://www.kimi.com/code/user-center/basic-information/interface-key
 
 ## 安装依赖
 
@@ -59,7 +59,7 @@ console.log(r.result.content);
 
 ## API 详情
 
-- **API 地址**: `https://api.moonshot.cn/v1`
-- **模型**: moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k, kimi-vl-flash (视觉)
+- **API 地址**: `https://api.kimi.com/coding/v1`
+- **模型**: kimi-for-coding, kimi-vl-flash (视觉)
 - **视觉**: 支持本地 base64 图片和 URL
 - **兼容**: OpenAI SDK 风格
